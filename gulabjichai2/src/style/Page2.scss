@@ -1,0 +1,116 @@
+@import 'main';
+
+.overlay-page2{
+    width: 100%;
+    height: 100%;
+    background:#e60d0d88;
+    position: relative;
+    z-index: 2;
+    >img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+}
+
+.aboutCard{
+    position: relative;
+    top: -5%;
+    
+}
+
+.about-con{
+    background: $brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >p{
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 3.34rem;
+        width: 100%;
+        padding-top: 20px;
+        color: rgba(255, 255, 255, 0.938);
+        filter: blur(0.6px);
+        margin:0px 0px 31.5px;
+    }
+    >img{
+        width: 50%;
+    }
+}
+
+.about-con h1:hover{
+    transform: rotate(0deg);
+}
+.about-con h1{
+    transition: 0.3s ease all;
+    font-size: 6rem;
+    transform: rotate(2deg);
+    font-family: $cagliostro;
+    font-weight: 900;
+    line-height: 5.5rem;
+    padding-top: 1rem;
+    color: $white;
+    position: relative;
+
+  }
+
+.about-con h1::after{
+    content: "74 Year Old Chai Store";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    line-height: 5.5rem;
+    color: #000;
+    z-index: -1;
+    top: 2px;
+    left: -4px;
+    padding-top: 1rem;
+    font-size: 6rem;
+  } 
+.about-card span{
+   font-family: $fredoka;
+   font-weight: 500;
+   font-size: 30px;
+   color: $hover-orange;
+}
+
+.about-card p{
+    font-family: $fredoka;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: $brown;
+ }
+
+ @media screen and (max-width:500px){
+    html{
+        font-size: 39%;
+    }
+    .about-con{
+        // align-items: flex-start;
+        // height: 25rem;
+        width: 100%;
+        >p{
+            font-size: 1.3rem;
+            filter: blur(0);
+            line-height: 1.2rem;
+        }
+    }
+    .about-con h1{
+        text-align: left;
+        font-size: 2.6rem;
+        // width: 50%;
+        line-height: 2.5rem;
+        
+    }
+
+    .about-con h1::after{
+    font-size: 2.6rem;
+    // width: 50%;
+    line-height: 2.5rem;
+    }
+ }

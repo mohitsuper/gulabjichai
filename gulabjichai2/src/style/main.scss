@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@87.5,300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cagliostro&display=swap');
+
+$yellow : #F6D649;
+$fredoka : "Fredoka", serif;
+$red:#E62E2D;
+$creem:#eee79fe1;
+$hover-orange:#E96B28;
+$brown:#6C1D0F;
+$cagliostro: "Cagliostro", serif;
+$white:#F8F8F8;
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+::selection{
+  color: #000;
+  background: #8DBB27;
+}
+a{
+    font-family: $fredoka;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #E62E2D;
+
+}
+
+a:hover{
+  color: $hover-orange;
+  transform: scale(1.1);
+}
+
+
+.animation:hover{
+  animation: guliter-animation ease alternate 1s;
+  animation-iteration-count: 2;
+}
+
+@keyframes guliter-animation {
+  0%{
+    transform: translateX(-5%);
+  }
+  35%{
+    transform: translateX(0%);
+  }
+  55%{
+    transform: translateX(5%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  // background-position: center;
+  // background-size: cover;
+}
+
+.swiper-slide img {
+  // display: block;
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+}
+
+@media screen and (max-width:500px) {
+  .swiper{
+    height: 150px;
+  }
+}

@@ -1,0 +1,36 @@
+
+.con{
+    border: 5px solid #F5D202;
+    position: relative;
+    /* background: #F8F8F8; */
+    height: fit-content;
+    transition: 0.3s ease all;
+    /* padding: .5rem 2rem; */
+
+}
+/* .con::after{
+    content: "";
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+    background: #E62E2D;
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    border-radius: .5rem;
+} */
+
+.con:hover{
+    transform: rotate(1.2deg);
+}
+.overlay-c{
+    background: #E62E2D;
+    height: 100%;
+    top: -10px;
+    left: 0;
+    z-index: -8;
+
+    width: 100%;
+    position: absolute;
+}
+

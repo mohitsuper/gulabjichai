@@ -1,0 +1,59 @@
+@import "main";
+.menu-main{
+    background-position: center 3%;
+    background-size: 150%;
+}
+.menulist{
+    background: #e3e3e2e0;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding: 0rem 3rem;
+    padding-top: 3.5rem;
+    >img{
+        height: 100%;
+    }
+
+}
+.chaiman-con{
+    padding: 0;
+}
+.chaiman-img{
+    width: 45%;
+    position: relative;
+    top: -60%;
+    left: 35%;
+    
+    z-index: 4;
+    }
+.chaiman{
+    // background: #000;
+    position: relative;
+    top: -160%;
+}
+
+@media screen and (max-width:500px) {
+    .menulist{
+        padding: 0;
+        gap: 0;
+        flex-direction: column;
+    }
+    .chaiman-img{
+        width: 75%;
+        position: relative;
+        top: -100%;
+        left: 0;
+        // left: 35%;
+        
+        z-index: 4;
+        }
+    .chaiman{
+        // background: #000;
+        position: relative;
+        top: -150%;
+    }
+    
+}
+

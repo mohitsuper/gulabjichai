@@ -1,0 +1,14 @@
+@import "main";
+
+.video-heading{
+   width: 100%;
+   text-align: center;
+   padding: 2rem 0;
+   >h1{
+    font-family: $cagliostro;
+    font-size: 45px;
+    text-transform: capitalize;
+    color: $brown;
+    font-weight: 900;
+   }
+}
